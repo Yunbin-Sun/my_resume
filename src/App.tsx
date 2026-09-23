@@ -49,33 +49,33 @@ type Project = {
 };
 
 const featuredProject = {
-  badge: "核心项目 · AI Agent",
-  status: "论文写作阶段",
+  badge: "核心研究 · 可验证智能体",
+  status: "实验与论文推进中",
   image: "scene-agent.webp",
-  title: "TGVP · 网页智能体任务规划",
-  role: "主要开发者 / 研究",
+  title: "TGVP · Template-Grounded Verifiable Planning",
+  role: "研究设计 / 核心开发",
   description:
-    "围绕大模型驱动的网页智能体（Web Agent）任务规划不稳定问题，设计模板约束、槽位填充与验证器的可验证规划框架，降低模型自由生成带来的步骤漂移与不可执行风险。",
-  tech: ["Python", "LLM API", "Prompt Engineering", "DSL / JSON", "实验工程", "数据分析"],
+    "面向大模型智能体规划中的自由生成、结构漂移与难验证问题，以结构化 DSL、模板约束和验证机制构建可验证规划框架，并围绕规划结构熵（PSE）设计系统化评估。",
+  tech: ["Python", "LLM", "Structured DSL", "Verifiable Planning", "PSE", "Statistical Analysis"],
   highlights: [
-    "设计 Planner、模板库、槽位填充、验证器与实验流水线等核心模块。",
-    "对比 free-form / JSON / TGVP 三种规划方式，完成 K=10 主实验（约 900 条记录）。",
-    "设计组件消融（约 1200 条记录）、温度鲁棒性与任务复杂度实验，支撑论文写作。",
+    "将自然语言规划重构为可检查的 Sequence / Graph 结构表示，并建立对应验证流程。",
+    "采用 Candidate / System 两阶段评估与失败分类体系，正式实验按每条件 K=50 设计。",
+    "以 candidate_Sequence_PSE@50 为主终点，并结合 Wilcoxon 检验与 bootstrap 置信区间进行统计分析。",
   ],
 };
 
 const projects: Project[] = [
   {
     image: "scene-charts.webp",
-    title: "智愈 · 肌电信号康复监测",
-    role: "算法与软件开发 · 创新比赛项目",
+    title: "算法智能生成 · 风险感知任务规格化与验证门控",
+    role: "共同作者 / 系统与实验设计",
     description:
-      "面向运动损伤康复中恢复进展难以量化的问题，基于表面肌电信号搭建康复监测 Demo。",
-    tech: ["Python", "PyQt6", "NumPy", "Pandas", "Matplotlib"],
+      "面向算法智能生成中需求缺失、冲突与错误下游放行问题，研究从自然语言任务到 TaskIR / TaskSpec 的风险感知规格化方法，并通过确定性验证门控控制任务进入算法生成器。",
+    tech: ["Python", "LLM", "TaskIR / TaskSpec", "Validation Gating", "Structured Clarification", "Evaluation"],
     highlights: [
-      "提取 RMS 等基础特征，做患侧 / 健侧肌电对比。",
-      "用 PyQt6 实现数据处理与可视化界面。",
-      "面向医院康复科、社区与家庭康复场景。",
+      "构建 TaskIR / TaskSpec 表示，覆盖目标、输入输出、指标、约束、资源、风险与来源信息。",
+      "实现缺失与冲突检测、结构化澄清、Schema / Rule / Semantic Validation 与 READY Gate。",
+      "论文题目：Risk-Aware Task Specification and Validation Gating for Intelligent Algorithm Generation。",
     ],
   },
   {
@@ -103,38 +103,38 @@ const projects: Project[] = [
 
 const skillGroups = [
   {
-    title: "编程语言",
+    title: "编程与实现",
     icon: "ic-laptop.webp",
-    items: ["Python（主力）", "C（基础）", "JavaScript / TypeScript", "HTML / CSS", "SQL"],
+    items: ["Python（主力）", "PyTorch（学习中）", "C / C++（基础）", "JavaScript / TypeScript", "HTML / CSS", "SQL"],
   },
   {
-    title: "AI / 大模型",
+    title: "研究方向",
     icon: "ic-bulb.webp",
     items: [
-      "Vibe Coding（熟练）",
-      "Claude Code / Codex 长期使用",
-      "LLM API 调用",
-      "Prompt Engineering",
-      "Web Agent 工作流",
-      "任务规划与结构化输出",
+      "世界模型",
+      "自监督表征学习",
+      "JEPA / V-JEPA",
+      "视频理解",
+      "潜空间预测与规划",
+      "可验证智能体",
     ],
   },
   {
-    title: "数据与科学计算",
+    title: "实验与数据",
     icon: "ic-glass.webp",
-    items: ["NumPy", "Pandas", "Matplotlib", "数据清洗 / 可视化", "实验统计分析"],
+    items: ["NumPy", "Pandas", "Matplotlib", "实验设计", "统计检验", "Bootstrap CI", "数据清洗 / 可视化"],
   },
   {
     title: "框架与工具",
     icon: "ic-gears.webp",
     items: [
-      "PyQt6",
-      "Flask / FastAPI",
+      "Git / GitHub",
+      "Docker",
+      "React / TypeScript",
+      "FastAPI",
       "Playwright",
-      "Electron / React",
-      "Git",
-      "PostgreSQL",
-      "VS Code · Anaconda · Docker（了解）",
+      "LLM API",
+      "VS Code / Codex / Claude Code",
     ],
   },
 ];
@@ -154,8 +154,18 @@ const experience: ExperienceItem[] = [
     title: "云南中医药大学 · 信息学院",
     role: "医学信息工程 · 本科在读",
     points: [
-      "专业方向涉及医学信息系统、数据处理、程序设计与医学数据分析。",
-      "持续学习数据结构、线性代数、机器学习基础等计算机与 AI 课程。",
+      "医学信息工程本科在读，持续学习计算机、数学、机器学习与医学数据相关课程。",
+      "当前重点转向世界模型、自监督表征学习、视频理解与潜空间预测等研究方向。",
+    ],
+  },
+  {
+    icon: "ic-scroll.webp",
+    period: "2026 · 北京",
+    title: "北京大学 · 科研实习",
+    role: "科研实习生",
+    points: [
+      "参与 PET-CT 与肌肉相关的医学影像研究工作，接触真实科研问题与研究流程。",
+      "在实习过程中进一步积累医学影像、数据分析与科研实践经验。",
     ],
   },
   {
@@ -175,8 +185,8 @@ const contacts = [
   { icon: GraduationCap, label: "学校", value: "云南中医药大学 · 医学信息工程", href: null },
   {
     icon: MapPin,
-    label: "实习地点",
-    value: "青岛（首选）· 北京 · 上海 · 杭州 · 成都 · 昆明 等",
+    label: "研究兴趣",
+    value: "世界模型 · 自监督表征 · 视频理解 · 可验证智能体",
     href: null,
   },
 ];
@@ -487,7 +497,7 @@ function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: reduceMotion ? 0 : 0.3, ease: easeOut }}
               >
-                AI 应用开发 · 大模型智能体 · 医学信息工程
+                世界模型 · 可验证智能体 · 医学信息工程
               </motion.p>
               <h1
                 className="select-none overflow-visible py-[0.08em] text-[20vw] font-medium leading-[1.02] tracking-[-0.03em] text-primary sm:text-[20vw] sm:tracking-[-0.03em] md:text-[15vw] lg:text-[13vw] xl:text-[12vw]"
@@ -510,8 +520,8 @@ function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: reduceMotion ? 0 : 0.5, ease: easeOut }}
               >
-                医学信息工程本科生，专注 AI 应用开发与大模型智能体。围绕 Web Agent
-                任务规划做研究型项目，也做过医疗信息化与数据分析方向的原型实践。
+                医学信息工程本科生，当前重点学习世界模型、自监督表征与视频理解；
+                同时持续推进可验证智能体规划与算法智能生成方向的研究。
               </motion.p>
               <motion.div
                 className="flex flex-wrap items-center gap-4"
@@ -545,7 +555,7 @@ function Hero() {
 
 function About() {
   const aboutCopy =
-    "我围绕网页智能体（Web Agent）的任务规划做研究型项目，尝试用模板约束、槽位填充和验证器，让大模型的规划更稳定、更可验证；也独立做过肌电信号康复监测和 AI 浏览器 Agent 等医工交叉与应用实践。目前仍在本科低年级，工程与科研经验还在积累，但愿意从基础任务做起，在真实项目里持续学习。";
+    "我正在从大模型智能体研究进一步转向世界模型方向，重点关注自监督表征学习、JEPA / V-JEPA、视频理解与潜空间预测。同时持续推进 TGVP 可验证规划与算法智能生成任务规格化研究，并通过北京大学科研实习积累医学影像研究经验。相比堆叠工具，我更关注问题如何被结构化、验证，以及模型如何学习可用于预测和规划的内部表征。";
 
   return (
     <section id="about" className="bg-ink px-4 py-16 sm:px-6 md:py-24">
@@ -561,7 +571,7 @@ function About() {
               segments={[
                 { text: "我是孙允斌，", className: "text-primary" },
                 { text: "医学信息工程本科生，", className: "text-primary" },
-                { text: "专注 AI 应用与大模型智能体。", className: "text-stone-500" },
+                { text: "关注世界模型与可验证智能系统。", className: "text-stone-500" },
               ]}
             />
           </h2>
@@ -912,7 +922,7 @@ function Contact() {
             viewport={viewport}
             transition={{ duration: 0.7, delay: 0.1, ease: easeOut }}
           >
-            正在寻找 AI 应用开发、大模型 / Web Agent、数据分析或医疗信息化方向的暑期实习与科研助理机会，欢迎通过邮箱或电话联系。
+            关注世界模型、自监督学习、视频理解、具身智能与可靠 AI 方向的科研交流和实习机会，也欢迎围绕可验证智能体与算法智能生成进行合作。
           </motion.p>
           <motion.a
             href="mailto:yunbinsun7215@foxmail.com"
