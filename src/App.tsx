@@ -49,33 +49,32 @@ type Project = {
 };
 
 const featuredProject = {
-  badge: "当前研究 · 可验证智能体",
-  status: "研究推进中",
-  image: "scene-agent.webp",
-  title: "TGVP · Template-Grounded Verifiable Planning",
-  role: "自主选题 · 导师指导",
+  badge: "会议论文 · 第一作者",
+  status: "已录用、尚未出版",
+  image: "scene-charts.webp",
+  title: "算法智能生成风险感知规格化与验证门控方法",
+  role: "第七届大数据体系高峰论坛",
   description:
-    "围绕大模型智能体规划的结构一致性与可验证性开展研究，探索如何借助模板约束与验证机制，让生成的规划更便于检查与评估。",
-  tech: ["Python", "LLM", "Verifiable Planning", "Research Design"],
+    "研究如何将自然语言需求转为可检查、可追溯的任务规格，并通过风险识别与验证门控，减少错误需求进入下游算法生成的风险。",
+  tech: ["LLM", "Task Specification", "Validation Gating"],
   highlights: [
-    "关注规划生成过程中的结构偏移与验证难题。",
-    "探索结构化表示、模板约束与验证流程之间的协同。",
-    "持续完善研究设计与评估方案，工作仍在推进中。",
+    "录用日期：2026 年 9 月 30 日。",
+    "论坛日期：2026 年 10 月 23–24 日，深圳。本人线下参会。",
   ],
 };
 
 const projects: Project[] = [
   {
     image: "scene-charts.webp",
-    title: "算法智能生成风险感知规格化与验证门控方法",
-    role: "第一作者 · 已录用、尚未出版",
+    title: "智愈 · EMG 信号处理项目",
+    role: "后端与核心架构开发",
     description:
-      "面向算法智能生成，研究如何清晰表达任务需求并通过验证门控检查任务规格，关注需求中的缺失、冲突与风险。",
-    tech: ["LLM", "Task Specification", "Validation Gating"],
+      "从医学信息工程场景出发，将 EMG 信号处理、指标计算与数据管理连接为可联调的软件系统。",
+    tech: ["后端服务", "EMG 信号处理", "数据库设计", "系统联调"],
     highlights: [
-      "论文已被第七届大数据体系高峰论坛录用，尚未出版。",
-      "围绕风险感知规格化与验证门控开展研究。",
-      "2026 年 10 月 23–24 日赴深圳线下参会。",
+      "参与后端服务与核心架构开发。",
+      "参与 EMG 信号处理与指标计算。",
+      "参与数据库设计与系统联调。",
     ],
   },
   {
@@ -97,19 +96,6 @@ const projects: Project[] = [
       "React + TypeScript 悬浮助手面板，经原生 window.shell 桥与宿主通信。",
       "Python / FastAPI 后端接入 browser-use 引擎，SSE 推送执行事件。",
       "双执行模式：确定性 DSL 步骤执行器 + ReAct（browser-use）兜底。",
-    ],
-  },
-  {
-    image: "scene-charts.webp",
-    title: "智愈 · EMG 信号处理项目",
-    role: "后端与核心架构开发",
-    description:
-      "从医学信息工程场景出发，将 EMG 信号处理、指标计算与数据管理连接为可联调的软件系统。",
-    tech: ["后端服务", "EMG 信号处理", "数据库设计", "系统联调"],
-    highlights: [
-      "参与后端服务与核心架构开发。",
-      "参与 EMG 信号处理与指标计算。",
-      "参与数据库设计与系统联调。",
     ],
   },
 ];
@@ -183,15 +169,6 @@ const experience: ExperienceItem[] = [
   },
   {
     icon: "ic-scroll.webp",
-    period: "论文录用",
-    title: "IEEE ISAICS 2026 · 日照",
-    role: "第二作者 · 已录用",
-    points: [
-      "Evidence-Quote Requirements in LLM-Based Structured Extraction: Accuracy, Output Overhead, and Format Reliability",
-    ],
-  },
-  {
-    icon: "ic-scroll.webp",
     period: "医疗 AI 实践",
     title: "昆明昇灵医疗科技有限公司",
     role: "实习",
@@ -201,12 +178,18 @@ const experience: ExperienceItem[] = [
   },
   {
     icon: "ic-scroll.webp",
-    period: "2026.06 · 昆明",
+    period: "2026.10.23–24 · 深圳",
+    title: "第七届大数据体系高峰论坛",
+    role: "线下参会",
+    points: ["第一作者论文在会前获录用，尚未出版。"],
+  },
+  {
+    icon: "ic-scroll.webp",
+    period: "2026.06.12–14 · 昆明",
     title: "ICBDSE 2026 · IEEE 第三届大数据科学与工程国际会议",
     role: "志愿者",
     points: [
-      "协助会议签到、嘉宾引导、会场秩序与会务支持。",
-      "接触大数据科学与工程领域的学术交流流程。",
+      "参与会议志愿服务。",
     ],
   },
 ];
@@ -551,8 +534,7 @@ function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: reduceMotion ? 0 : 0.5, ease: easeOut }}
               >
-                医学信息工程本科生，参与北京大学远程科研协作，推进可验证智能体与算法智能生成研究；
-                第一作者论文已录用，并在医疗 AI 实习中参与精神科智能体项目。
+                医学信息工程本科生，参与北京大学远程科研合作。两篇会议论文已录用，分别为第一作者和第二作者；也参与了肌电信号处理与医疗软件开发。
               </motion.p>
               <motion.div
                 className="flex flex-wrap items-center gap-4"
@@ -586,7 +568,7 @@ function Hero() {
 
 function About() {
   const aboutCopy =
-    "我在云南中医药大学学习医学信息工程，参与北京大学大数据分析与应用技术国家工程实验室远程科研协作。第一作者论文《算法智能生成风险感知规格化与验证门控方法》已被第七届大数据体系高峰论坛录用，尚未出版；在昆明昇灵医疗科技有限公司实习期间参与精神科医疗智能体项目。当前推进 TGVP 可验证规划研究，也从 EMG 信号处理与系统开发中积累工程经验。未来希望进一步探索视觉自监督学习、世界模型与新型学习机制。";
+    "我在云南中医药大学学习医学信息工程，参与北京大学大数据分析与应用技术国家工程实验室远程科研协作。第一作者论文《算法智能生成风险感知规格化与验证门控方法》已被第七届大数据体系高峰论坛录用，尚未出版；在昆明昇灵医疗科技有限公司实习期间参与精神科医疗智能体项目，并通过 EMG 信号处理和系统开发积累了工程经验。未来希望进一步探索视觉自监督学习、世界模型与新型学习机制。";
 
   return (
     <section id="about" className="bg-ink px-4 py-16 sm:px-6 md:py-24">
@@ -660,7 +642,7 @@ function FeaturedProject() {
           </div>
         </div>
         <div className="md:col-span-2">
-          <p className="text-[11px] tracking-[0.2em] text-primary/50">研究问题与目标</p>
+          <p className="text-[11px] tracking-[0.2em] text-primary/50">录用与参会</p>
           <ul className="mt-5 space-y-4">
             {featuredProject.highlights.map((item) => (
               <li key={item} className="flex gap-3 text-sm leading-relaxed text-stone-400">
@@ -736,13 +718,26 @@ function Projects() {
         className="pointer-events-none absolute right-0 top-10 h-[420px] w-[620px] max-w-[80%] translate-x-1/4 rounded-full bg-accent/[0.05] blur-[150px]"
       />
       <div className="relative mx-auto max-w-6xl">
-        <SectionTitle index="01" kicker="项目经历" title="把研究与场景做成系统" />
+        <SectionTitle index="01" kicker="成果与项目" title="已录用论文与工程实践" />
         <FeaturedProject />
+        <Reveal className="mt-4 rounded-2xl border border-white/10 bg-surface-raised p-6 sm:p-8">
+          <p className="text-xs text-accent">会议论文 · 第二作者 · 已录用</p>
+          <h3 className="mt-3 break-words text-lg leading-snug text-primary sm:text-xl">
+            Evidence-Quote Requirements in LLM-Based Structured Extraction: Accuracy, Output Overhead, and Format Reliability
+          </h3>
+          <p className="mt-3 text-sm leading-relaxed text-stone-400">
+            IEEE ISAICS 2026（第三届人工智能与网络安全国际研讨会）· 官网会议日程：2026 年 11 月 20–22 日，日照。
+          </p>
+        </Reveal>
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
           {projects.map((project, index) => (
             <ProjectCard key={project.title} project={project} index={index} />
           ))}
         </div>
+        <Reveal className="mt-6 border-t border-white/10 px-2 pt-5">
+          <h3 className="text-base text-primary">TGVP · 进行中，尚未投稿</h3>
+          <p className="mt-2 text-sm leading-relaxed text-stone-400">探索模板约束与验证机制能否让智能体生成更稳定、可检查的计划。</p>
+        </Reveal>
       </div>
     </section>
   );
