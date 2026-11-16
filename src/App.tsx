@@ -176,6 +176,8 @@ const experience: ExperienceItem[] = [
     role: "实习",
     points: [
       "参与精神科医疗智能体项目。",
+      "参与脑血管影像标注与复核平台的开发。",
+      "参与 Agent 基础架构搭建。",
     ],
   },
   {
