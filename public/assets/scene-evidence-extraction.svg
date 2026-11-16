@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450" fill="none">
+  <defs>
+    <radialGradient id="back" cx="0" cy="0" r="1" gradientTransform="translate(704 130) rotate(158) scale(780 550)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#362e20"/><stop offset="1" stop-color="#10100e"/>
+    </radialGradient>
+    <linearGradient id="sheet" x1="0" y1="0" x2="265" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#30291f"/><stop offset="1" stop-color="#181612"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="400" y1="182" x2="795" y2="218" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c29a61" stop-opacity=".46"/><stop offset=".56" stop-color="#f6d295"/><stop offset="1" stop-color="#eac68a" stop-opacity=".66"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#d2ab74" stroke-opacity=".10"/></pattern>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="220%"><feDropShadow dx="0" dy="15" stdDeviation="18" flood-color="#000" flood-opacity=".32"/></filter>
+  </defs>
+  <rect width="1200" height="450" fill="url(#back)"/>
+  <rect width="1200" height="450" fill="url(#grid)"/>
+  <circle cx="611" cy="216" r="171" stroke="#d8b17b" stroke-opacity=".12"/>
+  <circle cx="611" cy="216" r="126" stroke="#d8b17b" stroke-opacity=".10" stroke-dasharray="4 8"/>
+  <path d="M123 330H1077M123 353H1077" stroke="#e2c292" stroke-opacity=".08"/>
+  <g filter="url(#shadow)" transform="translate(307 84)">
+    <rect width="239" height="261" rx="15" fill="url(#sheet)" stroke="#d0ab77" stroke-opacity=".40"/>
+    <path d="M24 50H215" stroke="#bba17c" stroke-opacity=".25"/>
+    <circle cx="26" cy="26" r="4" fill="#ecc78d"/><path d="M42 26H111" stroke="#d6b47e" stroke-opacity=".6" stroke-width="5" stroke-linecap="round"/>
+    <path d="M25 76H182M25 95H205M25 164H191M25 184H149M25 219H180" stroke="#d3c3aa" stroke-opacity=".29" stroke-width="5" stroke-linecap="round"/>
+    <rect x="16" y="111" width="202" height="34" rx="6" fill="#bb8844" fill-opacity=".24" stroke="#f2cf91" stroke-opacity=".7"/>
+    <path d="M29 128H190" stroke="#f2cf91" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#shadow)" transform="translate(671 111)">
+    <rect width="228" height="216" rx="15" fill="url(#sheet)" stroke="#d0ab77" stroke-opacity=".40"/>
+    <path d="M25 53H201" stroke="#bba17c" stroke-opacity=".25"/>
+    <path d="M34 24l-8 8 8 8m16-16 8 8-8 8" stroke="#e4bf83" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="24" y="76" width="180" height="28" rx="5" fill="#b89462" fill-opacity=".10" stroke="#b89462" stroke-opacity=".18"/>
+    <rect x="24" y="117" width="180" height="28" rx="5" fill="#bb8844" fill-opacity=".26" stroke="#f2cf91" stroke-opacity=".65"/>
+    <rect x="24" y="158" width="180" height="28" rx="5" fill="#b89462" fill-opacity=".10" stroke="#b89462" stroke-opacity=".18"/>
+    <path d="M39 90H66m18 0h89M39 172h27m18 0h61" stroke="#d3c3aa" stroke-opacity=".43" stroke-width="4" stroke-linecap="round"/>
+    <path d="M39 131h27m18 0h96" stroke="#f2cf91" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <path d="M525 212h34c28 0 50 30 80 30h56" stroke="url(#flow)" stroke-width="3" stroke-linecap="round"/>
+  <path d="m683 236 11 6-11 6" stroke="#ecc78b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="525" cy="212" r="4" fill="#f2cf91"/>
+  <circle cx="611" cy="227" r="5" fill="#f6d497"/>
+</svg>

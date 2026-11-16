@@ -724,14 +724,33 @@ function Projects() {
       <div className="relative mx-auto max-w-6xl">
         <SectionTitle index="01" kicker="成果与项目" title="已录用论文与工程实践" />
         <FeaturedProject />
-        <Reveal className="mt-4 rounded-2xl border border-white/10 bg-surface-raised p-6 sm:p-8">
-          <p className="text-xs text-accent">会议论文 · 第二作者 · 已录用</p>
-          <h3 className="mt-3 break-words text-lg leading-snug text-primary sm:text-xl">
-            Evidence-Quote Requirements in LLM-Based Structured Extraction: Accuracy, Output Overhead, and Format Reliability
-          </h3>
-          <p className="mt-3 text-sm leading-relaxed text-stone-400">
-            IEEE ISAICS 2026（第三届人工智能与网络安全国际研讨会）· 官网会议日程：2026 年 11 月 20–22 日，日照。
-          </p>
+        <Reveal className="group mt-4 overflow-hidden rounded-2xl border border-white/10 bg-surface-raised">
+          <div className="relative h-48 overflow-hidden sm:h-56 md:h-64">
+            <img
+              src={asset("scene-evidence-extraction.svg")}
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              className="h-full w-full object-cover object-center transition-transform duration-700 ease-out motion-safe:group-hover:scale-[1.04]"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-surface-raised via-transparent to-transparent" />
+            <div className="absolute left-6 top-6 flex flex-wrap items-center gap-3 sm:left-8 sm:top-8">
+              <span className="inline-flex rounded-full bg-primary px-3 py-1 text-[11px] font-medium text-black">
+                会议论文 · 第二作者
+              </span>
+              <span className="inline-flex rounded-full border border-white/20 bg-ink/40 px-3 py-1 text-[11px] text-primary/80 backdrop-blur-sm">
+                已录用
+              </span>
+            </div>
+          </div>
+          <div className="p-6 sm:p-8">
+            <h3 className="break-words text-lg leading-snug text-primary sm:text-xl">
+              Evidence-Quote Requirements in LLM-Based Structured Extraction: Accuracy, Output Overhead, and Format Reliability
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-stone-400">
+              IEEE ISAICS 2026（第三届人工智能与网络安全国际研讨会）· 官网会议日程：2026 年 11 月 20–22 日，日照。
+            </p>
+          </div>
         </Reveal>
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
           {projects.map((project, index) => (
