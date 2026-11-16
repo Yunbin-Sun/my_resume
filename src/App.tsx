@@ -49,33 +49,33 @@ type Project = {
 };
 
 const featuredProject = {
-  badge: "核心研究 · 可验证智能体",
-  status: "实验与论文推进中",
+  badge: "当前研究 · 可验证智能体",
+  status: "研究推进中",
   image: "scene-agent.webp",
   title: "TGVP · Template-Grounded Verifiable Planning",
-  role: "研究设计 / 核心开发",
+  role: "自主选题 · 导师指导",
   description:
-    "面向大模型智能体规划中的自由生成、结构漂移与难验证问题，以结构化 DSL、模板约束和验证机制构建可验证规划框架，并围绕规划结构熵（PSE）设计系统化评估。",
-  tech: ["Python", "LLM", "Structured DSL", "Verifiable Planning", "PSE", "Statistical Analysis"],
+    "围绕大模型智能体规划的结构一致性与可验证性开展研究，探索如何借助模板约束与验证机制，让生成的规划更便于检查与评估。",
+  tech: ["Python", "LLM", "Verifiable Planning", "Research Design"],
   highlights: [
-    "将自然语言规划重构为可检查的 Sequence / Graph 结构表示，并建立对应验证流程。",
-    "采用 Candidate / System 两阶段评估与失败分类体系，正式实验按每条件 K=50 设计。",
-    "以 candidate_Sequence_PSE@50 为主终点，并结合 Wilcoxon 检验与 bootstrap 置信区间进行统计分析。",
+    "关注规划生成过程中的结构偏移与验证难题。",
+    "探索结构化表示、模板约束与验证流程之间的协同。",
+    "持续完善研究设计与评估方案，工作仍在推进中。",
   ],
 };
 
 const projects: Project[] = [
   {
     image: "scene-charts.webp",
-    title: "算法智能生成 · 风险感知任务规格化与验证门控",
-    role: "共同作者 / 系统与实验设计",
+    title: "算法智能生成风险感知规格化与验证门控方法",
+    role: "第一作者 · 已录用、尚未出版",
     description:
-      "面向算法智能生成中需求缺失、冲突与错误下游放行问题，研究从自然语言任务到 TaskIR / TaskSpec 的风险感知规格化方法，并通过确定性验证门控控制任务进入算法生成器。",
-    tech: ["Python", "LLM", "TaskIR / TaskSpec", "Validation Gating", "Structured Clarification", "Evaluation"],
+      "面向算法智能生成，研究如何清晰表达任务需求并通过验证门控检查任务规格，关注需求中的缺失、冲突与风险。",
+    tech: ["LLM", "Task Specification", "Validation Gating"],
     highlights: [
-      "构建 TaskIR / TaskSpec 表示，覆盖目标、输入输出、指标、约束、资源、风险与来源信息。",
-      "实现缺失与冲突检测、结构化澄清、Schema / Rule / Semantic Validation 与 READY Gate。",
-      "论文题目：Risk-Aware Task Specification and Validation Gating for Intelligent Algorithm Generation。",
+      "论文已被第七届大数据体系高峰论坛录用，尚未出版。",
+      "围绕风险感知规格化与验证门控开展研究。",
+      "2026 年 10 月 23–24 日赴深圳线下参会。",
     ],
   },
   {
@@ -99,6 +99,19 @@ const projects: Project[] = [
       "双执行模式：确定性 DSL 步骤执行器 + ReAct（browser-use）兜底。",
     ],
   },
+  {
+    image: "scene-charts.webp",
+    title: "智愈 · EMG 信号处理项目",
+    role: "后端与核心架构开发",
+    description:
+      "从医学信息工程场景出发，将 EMG 信号处理、指标计算与数据管理连接为可联调的软件系统。",
+    tech: ["后端服务", "EMG 信号处理", "数据库设计", "系统联调"],
+    highlights: [
+      "参与后端服务与核心架构开发。",
+      "参与 EMG 信号处理与指标计算。",
+      "参与数据库设计与系统联调。",
+    ],
+  },
 ];
 
 const skillGroups = [
@@ -108,15 +121,15 @@ const skillGroups = [
     items: ["Python（主力）", "PyTorch（学习中）", "C / C++（基础）", "JavaScript / TypeScript", "HTML / CSS", "SQL"],
   },
   {
-    title: "研究方向",
+    title: "未来研究兴趣",
     icon: "ic-bulb.webp",
     items: [
       "世界模型",
-      "自监督表征学习",
-      "JEPA / V-JEPA",
+      "视觉自监督学习",
+      "新型学习机制",
       "视频理解",
       "潜空间预测与规划",
-      "可验证智能体",
+      "表征学习",
     ],
   },
   {
@@ -155,24 +168,42 @@ const experience: ExperienceItem[] = [
     role: "医学信息工程 · 本科在读",
     points: [
       "医学信息工程本科在读，持续学习计算机、数学、机器学习与医学数据相关课程。",
-      "当前重点转向世界模型、自监督表征学习、视频理解与潜空间预测等研究方向。",
+      "以医学信息工程实践为起点，关注视觉自监督学习、世界模型与新型学习机制。",
     ],
   },
   {
     icon: "ic-scroll.webp",
-    period: "2026 · 北京",
-    title: "北京大学 · 科研实习",
-    role: "科研实习生",
+    period: "远程科研协作",
+    title: "北京大学 · 大数据分析与应用技术国家工程实验室",
+    role: "远程科研协作",
     points: [
-      "参与 PET-CT 与肌肉相关的医学影像研究工作，接触真实科研问题与研究流程。",
-      "在实习过程中进一步积累医学影像、数据分析与科研实践经验。",
+      "参与远程科研协作，围绕算法智能生成开展研究。",
+      "第一作者论文《算法智能生成风险感知规格化与验证门控方法》获第七届大数据体系高峰论坛录用，尚未出版。",
+    ],
+  },
+  {
+    icon: "ic-scroll.webp",
+    period: "论文录用",
+    title: "IEEE ISAICS 2026 · 日照",
+    role: "第二作者 · 已录用",
+    points: [
+      "Evidence-Quote Requirements in LLM-Based Structured Extraction: Accuracy, Output Overhead, and Format Reliability",
+    ],
+  },
+  {
+    icon: "ic-scroll.webp",
+    period: "医疗 AI 实践",
+    title: "昆明昇灵医疗科技有限公司",
+    role: "实习",
+    points: [
+      "参与精神科医疗智能体项目。",
     ],
   },
   {
     icon: "ic-scroll.webp",
     period: "2026.06 · 昆明",
     title: "ICBDSE 2026 · IEEE 第三届大数据科学与工程国际会议",
-    role: "志愿者 · 获评「最佳志愿者」",
+    role: "志愿者",
     points: [
       "协助会议签到、嘉宾引导、会场秩序与会务支持。",
       "接触大数据科学与工程领域的学术交流流程。",
@@ -186,7 +217,7 @@ const contacts = [
   {
     icon: MapPin,
     label: "研究兴趣",
-    value: "世界模型 · 自监督表征 · 视频理解 · 可验证智能体",
+    value: "视觉自监督学习 · 世界模型 · 新型学习机制",
     href: null,
   },
 ];
@@ -497,7 +528,7 @@ function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: reduceMotion ? 0 : 0.3, ease: easeOut }}
               >
-                世界模型 · 可验证智能体 · 医学信息工程
+                可验证智能体 · 算法智能生成 · 医学信息工程
               </motion.p>
               <h1
                 className="select-none overflow-visible py-[0.08em] text-[20vw] font-medium leading-[1.02] tracking-[-0.03em] text-primary sm:text-[20vw] sm:tracking-[-0.03em] md:text-[15vw] lg:text-[13vw] xl:text-[12vw]"
@@ -520,8 +551,8 @@ function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: reduceMotion ? 0 : 0.5, ease: easeOut }}
               >
-                医学信息工程本科生，当前重点学习世界模型、自监督表征与视频理解；
-                同时持续推进可验证智能体规划与算法智能生成方向的研究。
+                医学信息工程本科生，参与北京大学远程科研协作，推进可验证智能体与算法智能生成研究；
+                第一作者论文已录用，并在医疗 AI 实习中参与精神科智能体项目。
               </motion.p>
               <motion.div
                 className="flex flex-wrap items-center gap-4"
@@ -555,7 +586,7 @@ function Hero() {
 
 function About() {
   const aboutCopy =
-    "我正在从大模型智能体研究进一步转向世界模型方向，重点关注自监督表征学习、JEPA / V-JEPA、视频理解与潜空间预测。同时持续推进 TGVP 可验证规划与算法智能生成任务规格化研究，并通过北京大学科研实习积累医学影像研究经验。相比堆叠工具，我更关注问题如何被结构化、验证，以及模型如何学习可用于预测和规划的内部表征。";
+    "我在云南中医药大学学习医学信息工程，参与北京大学大数据分析与应用技术国家工程实验室远程科研协作。第一作者论文《算法智能生成风险感知规格化与验证门控方法》已被第七届大数据体系高峰论坛录用，尚未出版；在昆明昇灵医疗科技有限公司实习期间参与精神科医疗智能体项目。当前推进 TGVP 可验证规划研究，也从 EMG 信号处理与系统开发中积累工程经验。未来希望进一步探索视觉自监督学习、世界模型与新型学习机制。";
 
   return (
     <section id="about" className="bg-ink px-4 py-16 sm:px-6 md:py-24">
@@ -629,7 +660,7 @@ function FeaturedProject() {
           </div>
         </div>
         <div className="md:col-span-2">
-          <p className="text-[11px] tracking-[0.2em] text-primary/50">实验与产出</p>
+          <p className="text-[11px] tracking-[0.2em] text-primary/50">研究问题与目标</p>
           <ul className="mt-5 space-y-4">
             {featuredProject.highlights.map((item) => (
               <li key={item} className="flex gap-3 text-sm leading-relaxed text-stone-400">
@@ -922,7 +953,7 @@ function Contact() {
             viewport={viewport}
             transition={{ duration: 0.7, delay: 0.1, ease: easeOut }}
           >
-            关注世界模型、自监督学习、视频理解、具身智能与可靠 AI 方向的科研交流和实习机会，也欢迎围绕可验证智能体与算法智能生成进行合作。
+            欢迎围绕可验证智能体、算法智能生成与医疗 AI 交流，也期待视觉自监督学习、世界模型与新型学习机制方向的学习和研究机会。
           </motion.p>
           <motion.a
             href="mailto:yunbinsun7215@foxmail.com"
